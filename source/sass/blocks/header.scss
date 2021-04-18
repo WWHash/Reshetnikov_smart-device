@@ -1,0 +1,134 @@
+.header {
+  min-height: 876px;
+  background-color: #1b2d37;
+  background-image: url("../../img/bg_ripples.svg"), url("../../img/bg_triangles.svg");
+  background-position: 50% 0, -12px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 29px;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__logo-img {
+    margin-top: 3px;
+    margin-right: 14px;
+  }
+
+  &__logo-content {
+    h3 {
+      margin: 0;
+      margin-top: 9px;
+      font-family: $font-title;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 29px;
+      color: $white;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 0;
+      padding-left: 2px;
+      font-family: $font-title-desc;
+      font-size: 12px;
+      line-height: 14px;
+      color: #788891;
+    }
+  }
+
+  &__contacts-menu {
+    display: flex;
+  }
+
+  &__contacts-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__contacts-item {
+    margin-right: 51px;
+  }
+
+  &__contacts-link {
+    padding-left: 40px;
+    font-family: $font-text;
+    font-size: 16px;
+    line-height: 18px;
+    color: $white;
+    text-decoration: none;
+
+    svg {
+      margin-right: 7px;
+    }
+  }
+
+  &__btn {
+    width: 180px;
+    height: 45px;
+    margin-top: 6px;
+    border: 1px solid $white;
+    border-radius: 5px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 229px;
+
+    h1 {
+      width: 778px;
+      margin: 0;
+      margin-bottom: 25px;
+      font-family: $font-title;
+      font-size: 80px;
+      font-weight: bold;
+      line-height: 94px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    p {
+      position: relative;
+      width: 645px;
+      margin: 0;
+      padding-left: 94px;
+      font-family: $font-text;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 34px;
+      color: $white;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 17px;
+        width: 66px;
+        height: 2px;
+        background-color: $white;
+        content: "";
+      }
+    }
+  }
+
+  &__main-btn {
+    width: 407px;
+    height: 55px;
+    margin-left: 92px;
+    margin-top: 44px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: $blue;
+    border: none;
+    border-radius: 5px;
+  }
+}
