@@ -1,0 +1,52 @@
+.description {
+  position: relative;
+  padding-right: 375px;
+  padding-left: 555px;
+  margin-bottom: 110px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 340px;
+    width: 220px;
+    height: 317px;
+    background-image: url("../../img/2005.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  h2 {
+    margin: 0;
+    font-family: $roboto-condenced;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: #666666;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: $ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+  }
+
+  a {
+    display: inline-block;
+    width: 180px;
+    padding: 10px 0;
+    font-family: $roboto-condenced;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $blue;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}

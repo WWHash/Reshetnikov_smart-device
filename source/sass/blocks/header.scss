@@ -1,5 +1,6 @@
 .header {
   min-height: 876px;
+  margin-bottom: 109px;
   background-color: #1b2d37;
   background-image: url("../../img/bg_ripples.svg"), url("../../img/bg_triangles.svg");
   background-position: 50% 0, -12px 0;
@@ -25,7 +26,7 @@
     h3 {
       margin: 0;
       margin-top: 9px;
-      font-family: $font-title;
+      font-family: $roboto-condenced;
       font-size: 22px;
       font-weight: bold;
       line-height: 29px;
@@ -36,7 +37,7 @@
     p {
       margin: 0;
       padding-left: 2px;
-      font-family: $font-title-desc;
+      font-family: $roboto;
       font-size: 12px;
       line-height: 14px;
       color: #788891;
@@ -61,7 +62,7 @@
 
   &__contacts-link {
     padding-left: 40px;
-    font-family: $font-text;
+    font-family: $ptmono;
     font-size: 16px;
     line-height: 18px;
     color: $white;
@@ -89,7 +90,7 @@
       width: 778px;
       margin: 0;
       margin-bottom: 25px;
-      font-family: $font-title;
+      font-family: $roboto-condenced;
       font-size: 80px;
       font-weight: bold;
       line-height: 94px;
@@ -102,7 +103,7 @@
       width: 645px;
       margin: 0;
       padding-left: 94px;
-      font-family: $font-text;
+      font-family: $ptmono;
       font-size: 22px;
       font-weight: normal;
       line-height: 34px;

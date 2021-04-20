@@ -20,7 +20,7 @@
     h3 {
       margin: 0;
       margin-top: 9px;
-      font-family: $font-title;
+      font-family: $roboto-condenced;
       font-size: 22px;
       font-weight: bold;
       line-height: 29px;
@@ -31,7 +31,7 @@
     p {
       margin: 0;
       padding-left: 2px;
-      font-family: $font-title-desc;
+      font-family: $roboto;
       font-size: 12px;
       line-height: 14px;
       color: #788891;
@@ -57,7 +57,7 @@
     h2 {
       margin: 0;
       margin-bottom: 29px;
-      font-family: $font-title;
+      font-family: $roboto-condenced;
       font-weight: normal;
       font-size: 15px;
       line-height: 16px;
@@ -79,7 +79,7 @@
   }
 
   &__menu-link {
-    font-family: $footer;
+    font-family: $ptmono;
     font-size: 15px;
     line-height: 25px;
     color: rgba($footer, 0.5%);
@@ -89,7 +89,7 @@
     h2 {
       margin: 0;
       margin-bottom: 29px;
-      font-family: $font-title;
+      font-family: $roboto-condenced;
       font-weight: normal;
       font-size: 15px;
       line-height: 16px;
@@ -99,7 +99,7 @@
 
     p {
       margin: 0;
-      font-family: $footer;
+      font-family: $ptmono;
       font-size: 15px;
       line-height: 25px;
       color: rgba($footer, 0.5%);
@@ -107,7 +107,7 @@
 
     a {
       display: block;
-      font-family: $footer;
+      font-family: $ptmono;
       font-size: 15px;
       line-height: 25px;
       color: rgba($footer, 0.5%);
@@ -124,7 +124,7 @@
     justify-content: space-between;
 
     p {
-      font-family: $font-text;
+      font-family: $ptmono;
       font-size: 13px;
       line-height: 24px;
       text-transform: uppercase;
