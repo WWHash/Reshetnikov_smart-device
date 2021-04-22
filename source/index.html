@@ -222,6 +222,7 @@
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <button class="header__main-btn btn" type="button">Получить бесплатную консультацию</button>
+          <b>Скролл вниз</b>
         </div>
         <div class="header__main-img">
           <img src="img/header__img.png" width="705" height="515" alt="image-header">
@@ -231,6 +232,7 @@
   </header>
 
   <main class="main">
+
     <h2 class="visually-hidden">smart device</h2>
 
     <section class="advantages">
@@ -284,18 +286,69 @@
     </section>
 
     <section class="description">
-      <!-- <div class="container"> -->
-      <h2>О компании</h2>
-      <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-        года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-      </p>
-      <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-        РоссАвтоПрома
-        (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-      </p>
-      <a class="description__btn">Подробнее</a>
-      <!-- </div> -->
+      <div class="description__img"></div>
+      <div class="description__content">
+        <h2>О компании</h2>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+          1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+        </p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          РоссАвтоПрома
+          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+        </p>
+        <a class="description__btn">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Service Device предлагает следующие товары и услуги</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__img" src="img/image1.png" width="370" height="620" alt="image1">
+            <span>Производство печатных плат</span>
+          </a>
+        </li>
+
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__img" src="img/image2.png" width="370" height="620" alt="image2">
+            <span>Монтаж печатных плат</span>
+          </a>
+        </li>
+
+        <li class="catalog__item">
+          <a class="catalog__link" href="#">
+            <img class="catalog__img" src="img/image3.png" width="370" height="620" alt="image3">
+            <span>Комплектующие для светотехники</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="form">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="POST">
+        <h3>Остались вопросы? Задайте их нам!</h3>
+        <p>Мы проконсультируем Вас бесплатно</p>
+
+        <div class="form__half-width">
+          <input type="text" id="name" name="name" placeholder="Имя">
+          <input type="number" name="phone" placeholder="Телефон">
+        </div>
+
+        <textarea name="text" cols="30" rows="10">Ваш вопрос</textarea>
+
+        <div class="form__half-width">
+          <button class="form__btn btn" type="submit">Задать вопрос</button>
+          <input class="visually-hidden" type="checkbox" name="consent" id="consent">
+          <label for="consent">Я согласен на обработку персональных данных</label>
+        </div>
+
+      </form>
     </section>
   </main>
 

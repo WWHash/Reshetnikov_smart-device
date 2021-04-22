@@ -29,8 +29,14 @@ a {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 239px;
-  padding-right: 270px;
+  padding-left: 253px;
+  padding-right: 256px;
+}
+
+.container-main {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 375px;
 }
 
 .visually-hidden {

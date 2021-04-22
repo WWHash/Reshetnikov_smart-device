@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 110px;
+  margin-bottom: 106px;
 
   &__list {
     display: grid;
@@ -13,14 +13,16 @@
   }
 
   &__item {
-    padding: 45px;
+    padding: 39px 41px;
     background-color: $white;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     border-left: 3px solid #00b2ff;
     cursor: pointer;
     box-sizing: border-box;
+
     h3 {
       margin: 0;
+      margin-bottom: 17px;
       font-family: $roboto-condenced;
       font-weight: normal;
       font-size: 24px;
@@ -52,5 +54,9 @@
     &:hover svg {
       fill: $white;
     }
+  }
+
+  &__icon {
+    margin-bottom: 16px;
   }
 }

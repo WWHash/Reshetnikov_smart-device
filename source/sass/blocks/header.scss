@@ -1,16 +1,17 @@
 .header {
   min-height: 876px;
-  margin-bottom: 109px;
+  margin-bottom: 114px;
   background-color: #1b2d37;
   background-image: url("../../img/bg_ripples.svg"), url("../../img/bg_triangles.svg");
-  background-position: 50% 0, -12px 0;
+  background-position: 50% 0, 2px 0;
   background-repeat: no-repeat;
   background-size: cover;
 
   &__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 29px;
+    padding-top: 30px;
+    margin-bottom: 156px;
   }
 
   &__logo {
@@ -84,7 +85,6 @@
   &__main {
     display: flex;
     justify-content: space-between;
-    margin-top: 229px;
 
     h1 {
       width: 778px;
@@ -96,6 +96,7 @@
       line-height: 94px;
       color: $white;
       text-transform: uppercase;
+      letter-spacing: -4.5px;
     }
 
     p {
@@ -121,15 +122,32 @@
     }
   }
 
+  &__main-text {
+    margin-top: 72px;
+  }
+
   &__main-btn {
     width: 407px;
     height: 55px;
-    margin-left: 92px;
+    margin-left: 93px;
     margin-top: 44px;
     font-size: 16px;
     line-height: 19px;
     background-color: $blue;
     border: none;
     border-radius: 5px;
+  }
+
+  b {
+    display: block;
+    width: 93px;
+    margin-top: 130px;
+    margin-left: -39px;
+    font-family: $ptmono;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba($white, 0.5%);
+    transform: rotate(-90deg);
   }
 }

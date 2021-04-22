@@ -1,0 +1,68 @@
+.form {
+  padding: 0 calc(50% - 585px);
+  padding-top: 96px;
+  background-color: $blue;
+
+  form {
+    position: relative;
+    width: 570px;
+    margin-left: auto;
+
+    &::before {
+      position: absolute;
+      top: -64px;
+      left: -785px;
+      width: 700px;
+      height: 630px;
+      // background-color: #fff;
+      background-image: url("../../img/icons/icon-telegram.png"), url("../../img/bg_triangles.svg");
+      background-position: 160px 129px, 85.6% 84%;
+      background-repeat: no-repeat;
+      content: "";
+      box-sizing: border-box;
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 7px;
+      font-family: $roboto-condenced;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 51px;
+      color: $white;
+      letter-spacing: -1px;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 49px;
+      font-family: $ptmono;
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+    }
+
+    label {
+      display: block;
+      margin-left: 72px;
+      margin-top: 9px;
+      font-family: $ptmono;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba($white, 0.8%);
+    }
+  }
+
+  &__btn {
+    width: 390px;
+    height: 45px;
+    margin-bottom: 113px;
+    border: 1px solid $white;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  &__half-width {
+    display: flex;
+  }
+}
