@@ -2,12 +2,18 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 65px;
-    padding-bottom: 55px;
+    padding: 0 calc(50% - 707px);
+    padding-top: 62px;
+    padding-bottom: 57px;
+  }
+
+  &__wrapper {
+    margin-right: 165px;
   }
 
   &__logo {
     display: flex;
+    width: 216px;
     margin-bottom: 54px;
   }
 
@@ -20,7 +26,7 @@
     h3 {
       margin: 0;
       margin-top: 9px;
-      font-family: $roboto-condenced;
+      font-family: $roboto-condensed;
       font-size: 22px;
       font-weight: bold;
       line-height: 29px;
@@ -54,10 +60,12 @@
   }
 
   &__menu {
+    width: 615px;
+
     h2 {
       margin: 0;
       margin-bottom: 29px;
-      font-family: $roboto-condenced;
+      font-family: $roboto-condensed;
       font-weight: normal;
       font-size: 15px;
       line-height: 16px;
@@ -86,10 +94,12 @@
   }
 
   &__feedback {
+    margin-right: 15px;
+
     h2 {
       margin: 0;
       margin-bottom: 29px;
-      font-family: $roboto-condenced;
+      font-family: $roboto-condensed;
       font-weight: normal;
       font-size: 15px;
       line-height: 16px;
@@ -115,6 +125,8 @@
   }
 
   &__copyright {
+    padding: 0 calc(50% - 707px);
+
     min-height: 52px;
     border-top: 1px solid rgba($footer, 0.2%);
   }

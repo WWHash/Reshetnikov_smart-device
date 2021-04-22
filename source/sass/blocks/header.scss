@@ -1,9 +1,11 @@
 .header {
   min-height: 876px;
-  margin-bottom: 114px;
+  padding: 0 calc(50% - 706px);
+  padding-bottom: 2px;
+  margin-bottom: 112px;
   background-color: #1b2d37;
-  background-image: url("../../img/bg_ripples.svg"), url("../../img/bg_triangles.svg");
-  background-position: 50% 0, 2px 0;
+  background-image: url("../../img/bg_ripples.svg");
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -11,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    margin-bottom: 156px;
+    margin-bottom: 225px;
   }
 
   &__logo {
@@ -20,19 +22,22 @@
 
   &__logo-img {
     margin-top: 3px;
-    margin-right: 14px;
+    margin-right: 15px;
   }
 
   &__logo-content {
+    width: 154px;
+
     h3 {
       margin: 0;
       margin-top: 9px;
-      font-family: $roboto-condenced;
+      font-family: $roboto-condensed;
       font-size: 22px;
       font-weight: bold;
       line-height: 29px;
       color: $white;
       text-transform: capitalize;
+      letter-spacing: 1.5px;
     }
 
     p {
@@ -62,15 +67,17 @@
   }
 
   &__contacts-link {
-    padding-left: 40px;
+    padding-left: 34px;
     font-family: $ptmono;
     font-size: 16px;
     line-height: 18px;
     color: $white;
     text-decoration: none;
 
-    svg {
-      margin-right: 7px;
+    span {
+      display: inline-block;
+      padding-left: 10px;
+      margin-bottom: 3px;
     }
   }
 
@@ -83,14 +90,28 @@
   }
 
   &__main {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    width: 38%;
+    margin-right: auto;
+
+    &::before {
+      position: absolute;
+      top: -103px;
+      right: -955px;
+      width: 700px;
+      height: 630px;
+      background-image: url("../../img/header__img.png"), url("../../img/bg_triangles.svg");
+      background-position: -7px 47px, 85.6% 84%;
+      background-repeat: no-repeat;
+      content: "";
+    }
 
     h1 {
       width: 778px;
       margin: 0;
-      margin-bottom: 25px;
-      font-family: $roboto-condenced;
+      margin-left: -6px;
+      margin-bottom: 28px;
+      font-family: $roboto-condensed;
       font-size: 80px;
       font-weight: bold;
       line-height: 94px;

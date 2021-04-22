@@ -1,5 +1,5 @@
-//var
-$roboto-condenced: "Roboto Condenced", "Arial", sans-serif;
+//fonts
+$roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 $roboto: "Roboto", "Arial", sans-serif;
 $ptmono: "PT Mono", "Arial", sans-serif;
 
@@ -7,3 +7,13 @@ $ptmono: "PT Mono", "Arial", sans-serif;
 $white: #ffffff;
 $blue: #00b2ff;
 $footer: #1b2d37;
+
+
+//viewports
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$destop-width: 1919px;
+
+//retina
+$retina-dpi: 144dpi;
+$retina-dppx: 2dppx;
