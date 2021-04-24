@@ -12,6 +12,9 @@ body {
 
 .main {
   flex: 1 0 auto;
+  background-image: url("../img/triangl-advant-1.svg"), url("../img/triangl-advant-2.svg"), url("../img/triangl-advant-3.svg"), url("../img/triangl-advant-4.svg");
+  background-position: 12.8% 1.8%, 98.2% 15.5%, 0 22.1%, 53.3% 7.3%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .footer {

@@ -4,62 +4,91 @@
   padding-bottom: 123px;
   background-color: #1b2d37;
   font-family: $roboto-condensed;
+}
 
-  h2 {
-    margin: 0;
-    margin-bottom: 51px;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
-    color: $white;
+.catalog h2 {
+  margin: 0;
+  margin-bottom: 51px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__link {
+  position: relative;
+  display: block;
+  width: 370px;
+
+  &::after {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+    background-image: url("../../img/icons/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    content: "";
+  }
+}
+
+.catalog__link img {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.catalog__link span {
+  position: absolute;
+  top: 30px;
+  left: 24px;
+  display: block;
+  width: 170px;
+  padding: 20px;
+  font-family: $roboto-condensed;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+}
+
+//tablet
+@media (max-width: $tablet-width) {
+  .catalog {
+    padding: 0 calc(50% - 359px);
+    padding-top: 48px;
+    padding-bottom: 32px;
   }
 
-  &__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .catalog h2 {
+    width: 660px;
+    font-size: 32px;
+    line-height: 45px;
   }
 
-  &__item {
-    margin-right: 30px;
+  .catalog__list {
+    flex-direction: column;
   }
 
-  &__link {
-    position: relative;
-    display: block;
-    width: 370px;
+  .catalog__link {
+    width: 100%;
+    margin-bottom: 41px;
+  }
 
-    &::after {
-      position: absolute;
-      bottom: 5px;
-      right: 0;
-      width: 63px;
-      height: 63px;
-      background-color: $blue;
-      background-image: url("../../img/icons/arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      content: "";
-    }
+  .catalog__link img {
+    height: 256px;
+  }
 
-    img {
-      width: 100%;
-      opacity: 0.2;
-    }
-
-    span {
-      position: absolute;
-      top: 30px;
-      left: 24px;
-      display: block;
-      width: 170px;
-      padding: 20px;
-      font-family: $roboto-condensed;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 30px;
-      color: $white;
-    }
+  .catalog__link span {
+    top: 21px;
   }
 }

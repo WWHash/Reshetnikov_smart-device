@@ -255,8 +255,7 @@
     </section>
 
     <section class="description">
-      <div class="description__img"></div>
-      <div class="description__content">
+      <div class="description__wrapper">
         <h2>О компании</h2>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
           1997
@@ -264,9 +263,11 @@
         </p>
         <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
           Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+          <span> (РЖД),
           РоссАвтоПрома
           (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+        </span>
         </p>
         <a class="description__btn">Подробнее</a>
       </div>
@@ -277,21 +278,30 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__img" src="img/image1.png" width="370" height="620" alt="image1">
+            <picture>
+              <!-- <source media="(max-width: 768px)" srcset="img/image1__tablet.png"> -->
+              <img src="img/image1.png" width="370" height="620" alt="image1">
+            </picture>
             <span>Производство печатных плат</span>
           </a>
         </li>
 
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__img" src="img/image2.png" width="370" height="620" alt="image2">
+            <picture>
+              <!-- <source media="(max-width: 768px)" srcset="img/image2__tablet.png"> -->
+              <img src="img/image2.png" width="370" height="620" alt="image2">
+            </picture>
             <span>Монтаж печатных плат</span>
           </a>
         </li>
 
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <img class="catalog__img" src="img/image3.png" width="370" height="620" alt="image3">
+            <picture>
+              <!-- <source media="(max-width: 768px)" srcset="img/image3__tablet.png"> -->
+              <img src="img/image3.png" width="370" height="620" alt="image3">
+            </picture>
             <span>Комплектующие для светотехники</span>
           </a>
         </li>
@@ -322,7 +332,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="footer__content">
       <div class="footer__wrapper">
         <div class="footer__logo">
           <div class="footer__logo-img">
@@ -331,7 +341,7 @@
             </svg>
           </div>
           <div class="footer__logo-content">
-            <h3>Smart Device</h3>
+            <h3>Service Device</h3>
             <p>умные технологии</p>
           </div>
         </div>

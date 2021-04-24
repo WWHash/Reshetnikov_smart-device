@@ -1,51 +1,94 @@
 .description {
-  display: flex;
   padding: 0 calc(50% - 590px);
-  margin-bottom: 99px;
+  margin-bottom: 110px;
+}
 
-  &__img {
-    width: 390px;
+.description__wrapper {
+  position: relative;
+  padding-left: 185px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
     height: 318px;
-    margin-right: 56px;
     background-image: url("../../img/2005.png");
     background-repeat: no-repeat;
-    background-position: -24px 3px;
+    background-position: -25px 3px;
+    content: "";
+  }
+}
+
+.description h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $roboto-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.description p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $ptmono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  text-align: justify;
+}
+
+.description a {
+  display: block;
+  width: 180px;
+  padding: 13px 0;
+  margin-top: 40px;
+  font-family: $roboto-condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+//tablet
+@media (max-width: $tablet-width) {
+  .description {
+    padding: 0 calc(50% - 359px);
+    margin-bottom: 84px;
   }
 
-  h2 {
-    margin: 0;
-    margin-bottom: 20px;
-    font-family: $roboto-condensed;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
-    color: #666666;
+  .description__wrapper {
+    padding-left: 188px;
+
+    &::before {
+      top: -4px;
+      left: -6px;
+      height: 370px;
+      background-size: 246px 355px;
+    }
   }
 
-  p {
-    margin: 0;
-    margin-bottom: 30px;
-    font-family: $ptmono;
+  .description h2 {
+    margin-bottom: 27px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .description p {
     font-size: 16px;
     line-height: 22px;
-    color: #666666;
-    text-align: justify;
-  }
+    margin-bottom: 19px;
 
-  a {
-    display: inline-block;
-    width: 180px;
-    padding: 13px 0;
-    font-family: $roboto-condensed;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $blue;
-    border: 1px solid $blue;
-    border-radius: 5px;
-    box-sizing: border-box;
-    cursor: pointer;
+    span {
+      display: none;
+    }
   }
 }
