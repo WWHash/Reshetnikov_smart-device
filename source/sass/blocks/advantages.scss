@@ -88,3 +88,29 @@
     letter-spacing: -2px;
   }
 }
+
+//mobile
+@media (max-width: $mobile-width) {
+  .advantages {
+    padding: 0 calc(50% - 144px);
+  }
+
+  .advantages__list {
+    display: block;
+  }
+
+  .advantages__item {
+    padding: 23px 22px;
+    margin-bottom: 20px;
+  }
+
+  .advantages__icon {
+    margin-bottom: 10px;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+  }
+}

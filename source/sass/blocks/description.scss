@@ -37,7 +37,6 @@
   font-size: 16px;
   line-height: 22px;
   color: #666666;
-  text-align: justify;
 }
 
 .description a {
@@ -90,5 +89,39 @@
     span {
       display: none;
     }
+  }
+}
+
+//mobile
+@media (max-width: $mobile-width) {
+  .description {
+    padding: 0 calc(50% - 144px);
+    margin-bottom: 66px;
+  }
+
+  .description__wrapper {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .description h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 22px;
+  }
+
+  .description__wrapper p:first-of-type {
+    margin-bottom: 41px;
+  }
+
+  .description__wrapper p:last-of-type {
+    margin-bottom: 27px;
+  }
+
+  .description a {
+    margin-top: 0;
   }
 }

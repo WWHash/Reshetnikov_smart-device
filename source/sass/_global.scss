@@ -41,3 +41,10 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+//tablet
+@media (max-width: $tablet-width) {
+  .main {
+    background-image: none;
+  }
+}
