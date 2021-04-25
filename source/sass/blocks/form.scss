@@ -90,6 +90,11 @@
   border: 1px solid $white;
   border-radius: 5px;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($white, 0.1%);
+  }
 }
 
 .form__half-width {

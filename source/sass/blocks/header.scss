@@ -77,6 +77,15 @@
     display: inline-block;
     padding-left: 10px;
     margin-bottom: 3px;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba($blue, 0.5%);
+    }
   }
 }
 
@@ -86,6 +95,15 @@
   margin-top: 6px;
   border: 1px solid $white;
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $blue;
+  }
+
+  &:active {
+    border: 1px solid rgba($blue, 0.5%);
+  }
 }
 
 .header__main {
@@ -152,6 +170,15 @@
   background-color: $blue;
   border: none;
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($blue, 0.7%);
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.4%);
+  }
 }
 
 .header__main b {

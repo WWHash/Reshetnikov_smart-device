@@ -225,6 +225,10 @@
 
   .footer__feedback {
     width: 100%;
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
   }
 
   .footer__copyright {
@@ -233,5 +237,9 @@
 
   .footer__copyright-wrapper {
     flex-direction: column;
+  }
+
+  details summary::marker {
+    display: none;
   }
 }

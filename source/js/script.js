@@ -13,6 +13,3 @@
 //     pageHeader.classList.remove('page-header--opened');
 //   }
 // });
-
-let p = document.querySelector(".footer__clone");
-let pClone = p.importNode(true);

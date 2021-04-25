@@ -55,6 +55,16 @@
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    background-color: rgba($blue, 0.4%);
+  }
 }
 
 //tablet

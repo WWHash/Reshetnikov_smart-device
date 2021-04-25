@@ -16,6 +16,14 @@ input[type="number"] {
   &::placeholder {
     color: $white;
   }
+
+  &:hover {
+    background-color: rgba($white, 0.5%);
+  }
+
+  &:focus {
+    background-color: $white;
+  }
 }
 
 input[type="number"] {
@@ -35,6 +43,14 @@ textarea {
   color: $white;
   border: none;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: rgba($white, 0.5%);
+  }
+
+  &:focus {
+    background-color: $white;
+  }
 }
 
 //tablet
