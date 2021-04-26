@@ -145,6 +145,14 @@
   color: rgba($footer, 0.5%);
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
 //tablet
 @media (max-width: $tablet-width) {
   .footer__content {
@@ -237,9 +245,5 @@
 
   .footer__copyright-wrapper {
     flex-direction: column;
-  }
-
-  details summary::marker {
-    display: none;
   }
 }
