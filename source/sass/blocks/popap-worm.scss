@@ -134,3 +134,10 @@
     transform: rotate(-45deg);
   }
 }
+
+//tablet
+@media (max-width: $tablet-width) {
+  .popap-form {
+    display: none;
+  }
+}

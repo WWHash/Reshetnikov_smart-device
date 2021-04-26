@@ -4,7 +4,7 @@
   background-color: $blue;
   background-image: url("../../img/triangl-big.svg"), url("../../img/triangl-small.svg");
   background-position: 100% 109%, 99.2% 10%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .form form {
@@ -18,7 +18,7 @@
     left: -785px;
     width: 700px;
     height: 630px;
-    background-image: url("../../img/icons/icon-telegram.png"), url("../../img/bg_triangles.svg");
+    background-image: url("../../img/icon-telegram.png"), url("../../img/bg_triangles.svg");
     background-position: 160px 129px, 85.6% 84%;
     background-repeat: no-repeat;
     content: "";
@@ -99,6 +99,26 @@
 
 .form__half-width {
   display: flex;
+}
+
+@media (max-width: 1720px) {
+  .form {
+    background-position: 1000px 1000px, 1000% 1000%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form {
+    padding: 0 calc(50% - 480px);
+    padding-top: 89px;
+  }
+
+  .form form::before {
+    width: 574px;
+    left: -577px;
+    background-size: 400px 250px, 248% 131%;
+    background-position: 160px 129px,77.6% 95%;
+  }
 }
 
 //tablet

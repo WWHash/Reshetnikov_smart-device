@@ -67,6 +67,12 @@
   margin-bottom: 16px;
 }
 
+@media (max-width: 1200px) {
+  .advantages__list {
+    grid-template-columns: 480px 480px;
+  }
+}
+
 //tablet
 @media (max-width: $tablet-width) {
   .advantages {

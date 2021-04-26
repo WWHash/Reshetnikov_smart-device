@@ -212,11 +212,12 @@ details > summary {
 @media (max-width: $mobile-width) {
   .footer__content {
     flex-direction: column;
-    padding: 0 calc(50% - 144px);
+    // padding: 0 calc(50% - 144px);
   }
 
   .footer__wrapper {
     display: block;
+    border-bottom: 1px solid rgba($footer, 0.2%);
   }
 
   .footer__logo {
@@ -229,14 +230,40 @@ details > summary {
 
   .footer__menu {
     width: 100%;
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba($footer, 0.2%);
   }
 
   .footer__feedback {
     width: 100%;
+  }
 
-    details summary::-webkit-details-marker {
-      display: none;
+  details {
+    padding: 0 calc(50% - 144px);
+    cursor: pointer;
+  }
+
+  details summary {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 1px;
+      background-color: #c4c4c4;
+      content: "";
     }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  details[open] summary::after {
+    display: none;
   }
 
   .footer__copyright {
