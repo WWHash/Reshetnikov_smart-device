@@ -28,13 +28,14 @@ input[type="number"] {
 
 input[type="number"] {
   margin-right: 0;
+  appearance: textfield;
 }
 
 textarea {
   width: 570px;
   height: 154px;
   padding: 13px 14px;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   font-family: $ptmono;
   font-weight: normal;
   font-size: 16px;
@@ -51,10 +52,6 @@ textarea {
   &:focus {
     background-color: $white;
   }
-}
-
-input[type="number"] {
-  appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

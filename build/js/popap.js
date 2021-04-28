@@ -10,3 +10,13 @@ btnOpen.onclick = function () {
 btnClose.onclick = function () {
   popap.classList.add('visually-hidden');
 };
+
+
+var onPopupEscPress = function (evt) {
+  if (evt.key === 'Escape') {
+    evt.preventDefault();
+    popap.classList.add('visually-hidden');
+  }
+};
+
+document.addEventListener('keydown', onPopupEscPress);

@@ -34,7 +34,6 @@
   font-size: 36px;
   line-height: 51px;
   color: $white;
-  letter-spacing: -2px;
 }
 
 .form p {
@@ -83,7 +82,7 @@
 
 
 .form__btn {
-  width: 390px;
+  width: 415px;
   height: 45px;
   margin-bottom: 113px;
   margin-right: 37px;
@@ -117,7 +116,7 @@
     width: 574px;
     left: -577px;
     background-size: 400px 250px, 248% 131%;
-    background-position: 160px 129px,77.6% 95%;
+    background-position: 160px 129px, 77.6% 95%;
   }
 }
 
@@ -142,7 +141,6 @@
     margin-bottom: 16px;
     font-size: 32px;
     line-height: 45px;
-    letter-spacing: 1.5px;
   }
 
   .form p {
@@ -155,6 +153,7 @@
 
   .form__btn {
     margin-bottom: 40px;
+    width: 427px;
   }
 }
 
@@ -163,7 +162,7 @@
   .form {
     padding: 0 calc(50% - 144px);
     padding-top: 29px;
-    padding-bottom: 41px;
+    padding-bottom: 49px;
   }
 
   .form h3 {
@@ -173,6 +172,7 @@
 
   .form p {
     margin-bottom: 23px;
+    width: 250px;
   }
 
   .form__half-width {

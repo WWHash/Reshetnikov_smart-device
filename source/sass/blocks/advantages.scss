@@ -41,7 +41,7 @@
   color: #666666;
 }
 
-.advantages__item path {
+.advantages__item svg {
   fill: $blue;
 }
 
@@ -59,7 +59,7 @@
   color: $white;
 }
 
-.advantages__item:hover path {
+.advantages__item:hover svg {
   fill: $white;
 }
 
@@ -87,7 +87,7 @@
   }
 
   .advantages__item {
-    padding: 23px 27px;
+    padding: 24px 20px 23px 25px;
   }
 
   .advantages__icon {
@@ -96,7 +96,6 @@
 
   .advantages__item h3 {
     margin-bottom: 11px;
-    letter-spacing: -2px;
   }
 }
 
@@ -111,8 +110,12 @@
   }
 
   .advantages__item {
-    padding: 23px 22px;
+    padding: 23px 15px 23px 22px;
     margin-bottom: 20px;
+  }
+
+  .advantages__item:first-child + .advantages__item {
+    padding: 23px 10px 23px 23px;
   }
 
   .advantages__icon {
@@ -122,6 +125,6 @@
   .advantages__item h3 {
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: -1px;
+    margin-bottom: 18px;
   }
 }
