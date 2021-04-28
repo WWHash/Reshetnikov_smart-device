@@ -2,7 +2,7 @@
   padding: 0 calc(50% - 585px);
   padding-top: 89px;
   background-color: $blue;
-  background-image: url("../../img/triangl-big.svg"), url("../../img/triangl-small.svg");
+  background-image: url("../img/triangl-big.svg"), url("../img/triangl-small.svg");
   background-position: 100% 109%, 99.2% 10%;
   background-repeat: no-repeat, no-repeat;
 }
@@ -18,7 +18,7 @@
     left: -785px;
     width: 700px;
     height: 630px;
-    background-image: url("../../img/icon-telegram.png"), url("../../img/bg_triangles.svg");
+    background-image: url("../img/icon-telegram.png"), url("../img/bg_triangles.svg");
     background-position: 160px 129px, 85.6% 84%;
     background-repeat: no-repeat;
     content: "";
