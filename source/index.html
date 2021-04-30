@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/Roboto.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -133,8 +137,9 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
-              <!-- <source media="(max-width: 768px)" srcset="img/image1__tablet.png"> -->
-              <img src="img/image1.png" width="370" height="620" alt="image1">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/image1__mobile@1x.webp 1x, img/image1__mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/image1__tablet@1x.webp 1x, img/image1__tablet@2x.webp 2x">
+              <img src="img/image1@1x.png" srcset="img/image1@1x.png 1x, img/image1@2x.png 2x" width="370" height="620" alt="image1">
             </picture>
             <span>Производство печатных плат</span>
           </a>
@@ -143,8 +148,9 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
-              <!-- <source media="(max-width: 768px)" srcset="img/image2__tablet.png"> -->
-              <img src="img/image2.png" width="370" height="620" alt="image2">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/image2__mobile@1x.webp 1x, img/image2__mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/image2__tablet@1x.webp 1x, img/image2__tablet@2x.webp 2x">
+              <img src="img/image2@1x.png" srcset="img/image2@1x.png 1x, img/image2@2x.png 2x" width="370" height="620" alt="image2">
             </picture>
             <span>Монтаж печатных плат</span>
           </a>
@@ -153,8 +159,9 @@
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
-              <!-- <source media="(max-width: 768px)" srcset="img/image3__tablet.png"> -->
-              <img src="img/image3.png" width="370" height="620" alt="image3">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/image3__mobile@1x.webp 1x, img/image3__mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/image3__tablet@1x.webp 1x, img/image3__tablet@2x.webp 2x">
+              <img src="img/image3@1x.png" srcset="img/image3@1x.png 1x, img/image3@2x.png 2x" width="370" height="620" alt="image2">
             </picture>
             <span>Комплектующие для светотехники</span>
           </a>
@@ -293,7 +300,7 @@
       <button class="popap-form__btn-close"><span class="visually-hidden">Закрыть попап</span></button>
     </div>
 
-    <form action="" method="POST">
+    <form action="https://echo.htmlacademy.ru/courses" method="POST">
       <input type="text" id="name" name="name" placeholder="Имя">
       <input type="number" name="phone" placeholder="Телефон">
       <textarea name="text" cols="30" rows="10">Ваш вопрос</textarea>
