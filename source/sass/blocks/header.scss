@@ -1,11 +1,14 @@
 .header {
-  padding: 0 calc(50% - 706px);
   padding-bottom: 129px;
   background-color: #1b2d37;
   background-image: url("../img/bg_ripples.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .container {
+    max-width: 1410px;
+  }
 }
 
 .header__top {
@@ -55,14 +58,18 @@
 
 .header__contacts-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 9px;
+  width: 74%;
+  list-style: none;
 }
 
 .header__contacts-item {
   margin-right: 48px;
+  margin-bottom: 8px;
 }
 
 .header__contacts-link {
@@ -91,6 +98,9 @@
 }
 
 .header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 180px;
   height: 45px;
   margin-top: 6px;
@@ -110,17 +120,17 @@
 
 .header__main {
   position: relative;
-  width: 38%;
+  width: 100%;
   margin-right: auto;
 
   &::before {
     position: absolute;
     top: -103px;
-    right: -955px;
-    width: 700px;
+    right: 0;
+    width: 710px;
     height: 630px;
     background-image: url("../img/header__img.png"), url("../img/bg_triangles.svg");
-    background-position: -7px 47px, 85.6% 84%;
+    background-position: 0 47px, 86.2% 84%;
     background-repeat: no-repeat;
     content: "";
   }
@@ -164,6 +174,9 @@
 }
 
 .header__main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 407px;
   height: 55px;
   margin-left: 93px;
@@ -187,7 +200,7 @@
   display: none;
 }
 
-.header__main b {
+.header__main-scroll {
   display: block;
   width: 93px;
   margin-top: 130px;
@@ -200,24 +213,14 @@
   transform: rotate(-90deg);
 }
 
-@media (max-width: 1590px) {
-  .header__main {
-    &::before {
-      right: -858px;
-    }
-  }
-}
-
 @media (max-width: 1423px) {
   .header {
-    padding: 0 calc(50% - 613px);
     padding-bottom: 130px;
   }
 
   .header__main {
     &::before {
       width: 536px;
-      right: -765px;
       background-position: 59px 74px, 85.6% 151%;
       background-size: 471px 371px, 1440px 729px;
     }
@@ -226,7 +229,6 @@
 
 @media (max-width: 1423px) {
   .header {
-    padding: 0 calc(50% - 484px);
     padding-bottom: 130px;
   }
 
@@ -235,7 +237,6 @@
 
     &::before {
       width: 476px;
-      right: -626px;
       background-position: 2px 74px, 80.6% 151%;
       background-size: 471px 371px, 1440px 729px;
       z-index: -1;
@@ -246,7 +247,6 @@
 //tablet
 @media (max-width: $tablet-width) {
   .header {
-    padding: 0 calc(50% - 359px);
     padding-bottom: 163px;
     margin-bottom: 54px;
   }
@@ -258,6 +258,10 @@
 
   .header__btn {
     display: none;
+  }
+
+  .header__contacts-list {
+    width: 116px;
   }
 
   .header__contacts-item {
@@ -277,10 +281,10 @@
     margin-left: 20px;
 
     &::before {
-      right: -450px;
-      width: 320px;
-      background-position: 64px 27px, 68.5% 116%;
-      background-size: 462px 341px, 1506px 910px;
+      top: -111px;
+      width: 494px;
+      background-position: 257px 36px, 61.3% 302%;
+      background-size: 462px 341px, 1506px 700px;
     }
   }
 
@@ -310,7 +314,7 @@
     width: 379px;
   }
 
-  .header__main b {
+  .header__main-scroll {
     display: none;
   }
 }
@@ -318,7 +322,6 @@
 //mobile
 @media (max-width: $mobile-width) {
   .header {
-    padding: 0 calc(50% - 143px);
     padding-bottom: 69px;
     margin-bottom: 37px;
   }
@@ -337,6 +340,10 @@
     display: none;
   }
 
+  .header__contacts-list {
+    width: 94px;
+  }
+
   .header__contacts-link {
     padding-left: 24px;
   }
@@ -351,8 +358,8 @@
       right: -16px;
       width: 320px;
       height: 411px;
-      background-position: 27px 25px, 55.1% 73.5%;
-      background-size: 300px 220px, 1440px 729px;
+      background-position: 27px 25px, 55.1% 80.5%;
+      background-size: 300px 220px, 1440px 660px;
       z-index: -1;
     }
   }

@@ -24,15 +24,17 @@
 //     footerCopyrightContainer.appendChild(fragment);
 //   }
 // }
-
 window.addEventListener('resize', function () {
   var TABLET_MEDIA_QUERY = '(max-width: 1023px)';
-  var MOBILE_MEDIA_QUERY = '(max-width: 767px)';
   var clone = document.querySelector('.footer__clone');
-  var parent = document.querySelector('.footer__wrapper');
+  var parentOne = document.querySelector('.footer__wrapper');
+  var parentTwo = document.querySelector('.footer__copyright-wrapper');
   var reference = document.querySelector('.footer__social');
+  var referenceTwo = document.querySelector('.footer__reference--two');
 
-  if (window.matchMedia(TABLET_MEDIA_QUERY).matches && window.matchMedia(MOBILE_MEDIA_QUERY).matches) {
-    parent.insertBefore(clone, reference);
+  if (window.matchMedia(TABLET_MEDIA_QUERY).matches) {
+    parentOne.insertBefore(clone, reference);
+  } else {
+    parentTwo.insertBefore(clone, referenceTwo);
   }
 });

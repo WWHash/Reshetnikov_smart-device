@@ -1,8 +1,10 @@
 .footer__content {
   display: flex;
-  padding: 0 calc(50% - 707px);
+  justify-content: center;
   padding-top: 62px;
-  padding-bottom: 59px;
+  padding-bottom: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .footer__wrapper {
@@ -12,7 +14,7 @@
 .footer__logo {
   display: flex;
   width: 250px;
-  margin-bottom: 54px;
+  margin-bottom: 51px;
 }
 
 .footer__logo-img {
@@ -43,11 +45,16 @@
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
-  width: 112px;
+  flex-wrap: wrap;
+  width: 130px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer__social-item {
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .footer__social-link {
@@ -57,11 +64,11 @@
 }
 
 .footer__social-link svg {
-  fill: #999999;
+  fill: #cdcdcd;
 }
 
 .footer__social-link:hover svg {
-  fill: rgba(#999999, 0.5%);
+  fill: rgba(#cdcdcd, 0.5%);
 }
 
 .footer__menu {
@@ -90,7 +97,8 @@
 }
 
 .footer__menu-item {
-  width: 50%;
+  width: 45%;
+  padding-right: 20px;
 }
 
 .footer__menu-link {
@@ -98,6 +106,11 @@
   font-size: 15px;
   line-height: 25px;
   color: rgba($footer, 0.5%);
+
+  &:hover,
+  &:focus {
+    color: rgba($footer, 0.9%);
+  }
 }
 
 .footer__feedback {
@@ -129,12 +142,20 @@
   font-size: 15px;
   line-height: 25px;
   color: rgba($footer, 0.5%);
+
+  &:hover,
+  &:focus {
+    color: rgba($footer, 0.9%);
+  }
 }
 
 
 .footer__copyright {
-  padding: 0 calc(50% - 707px);
   border-top: 1px solid rgba($footer, 0.2%);
+
+  .container {
+    max-width: 1410px;
+  }
 }
 
 .footer__copyright-wrapper {
@@ -144,13 +165,19 @@
   align-items: center;
 }
 
-.footer__copyright p {
+.footer__copyright p,
+.footer__copyright a {
   margin: 0;
   font-family: $ptmono;
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
   color: rgba($footer, 0.5%);
+}
+
+.footer__copyright a:hover,
+.footer__copyright a:focus {
+  color: rgba($footer, 0.9%);
 }
 
 .footer__copyright p:first-child {
@@ -177,7 +204,6 @@ details > summary {
 
 @media (max-width: 1420px) {
   .footer__content {
-    padding: 0 calc(50% - 490px);
     padding-top: 62px;
     padding-bottom: 59px;
   }
@@ -202,7 +228,6 @@ details > summary {
 //tablet
 @media (max-width: $tablet-width) {
   .footer__content {
-    padding: 0 calc(50% - 359px);
     flex-wrap: wrap;
     padding-top: 16px;
     padding-bottom: 36px;
@@ -289,10 +314,6 @@ details > summary {
     letter-spacing: 0.7px;
   }
 
-  .footer__copyright {
-    padding: 0 calc(50% - 359px);
-  }
-
   .footer__copyright-wrapper {
     min-height: 69px;
   }
@@ -311,16 +332,16 @@ details > summary {
 @media (max-width: $mobile-width) {
   .footer__content {
     flex-direction: column;
-    // padding: 0 calc(50% - 144px);
     padding-top: 44px;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 0;
   }
 
   .footer__wrapper {
     display: block;
-    padding-bottom: 53px;
-    margin-bottom: 28px;
-    border-bottom: 1px solid rgba($footer, 0.2%);
+    padding-bottom: 51px;
+    margin-bottom: 0;
   }
 
   .footer__logo {
@@ -334,32 +355,49 @@ details > summary {
 
   .footer__menu {
     width: 100%;
-    margin-bottom: 27px;
-    border-bottom: 1px solid rgba($footer, 0.2%);
+
+    h2 {
+      margin: 0;
+    }
 
     details {
-      padding: 0 calc(50% - 148px);
+      padding-top: 28px;
+      padding-bottom: 27px;
+      border-top: 1px solid rgba($footer, 0.2%);
+      border-bottom: 1px solid rgba($footer, 0.2%);
     }
   }
 
-  .footer__menu h2 {
-    margin-bottom: 26px;
+  .footer__menu-list {
+    margin-top: 33px;
+  }
+
+  .footer__menu-item {
+    padding-right: 0;
   }
 
   .footer__feedback {
     width: 100%;
 
     h2 {
-      margin-bottom: 31px;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 33px;
     }
 
     details {
-      padding: 0 calc(50% - 146px);
+      padding-top: 26px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid rgba($footer, 0.2%);
     }
   }
 
   details {
     cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   details summary {
@@ -368,8 +406,8 @@ details > summary {
     &::before,
     &::after {
       position: absolute;
-      top: 6px;
-      right: 6px;
+      top: 7px;
+      right: 2px;
       width: 16px;
       height: 1px;
       background-color: #c4c4c4;
@@ -386,7 +424,7 @@ details > summary {
   }
 
   .footer__copyright {
-    padding: 0 calc(50% - 144px);
+    border-top: none;
   }
 
   .footer__copyright-wrapper {

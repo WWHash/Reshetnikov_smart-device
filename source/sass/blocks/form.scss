@@ -1,5 +1,4 @@
 .form {
-  padding: 0 calc(50% - 585px);
   padding-top: 89px;
   background-color: $blue;
   background-image: url("../img/triangl-big.svg"), url("../img/triangl-small.svg");
@@ -54,6 +53,7 @@
   font-size: 14px;
   line-height: 16px;
   color: rgba($white, 0.8%);
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -108,7 +108,6 @@
 
 @media (max-width: 1200px) {
   .form {
-    padding: 0 calc(50% - 480px);
     padding-top: 89px;
   }
 
@@ -123,7 +122,6 @@
 //tablet
 @media (max-width: $tablet-width) {
   .form {
-    padding: 0 calc(50% - 292px);
     padding-top: 78px;
     padding-bottom: 64px;
     background-image: none;
@@ -160,9 +158,8 @@
 //mobile
 @media (max-width: $mobile-width) {
   .form {
-    padding: 0 calc(50% - 144px);
     padding-top: 29px;
-    padding-bottom: 49px;
+    padding-bottom: 41px;
   }
 
   .form h3 {
